@@ -46,5 +46,5 @@ while find_embedded_trash
 do
 	echo "Extracting trash directory of '$test_name'"
 
-	extract_embedded_trash |base64 -d |tar xzp
+	extract_embedded_trash |base64 -d |untar xzp
 done
